@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+<h1 id="baslik">Todo App<h1>
+
+</header>
+
+<footer>
+
+  <div class="searchbar">
+<input type="text" id="searchinput" placeholder="What do you need to do?" onchange="handleInputChange(event)">
+<button type="submit" onclick="add()" id="searchbutton">ADD</button>
+  </div>
+
+ 
+  <div class="cerceve">
+
+    <h2 id="taskbaslik">Tasks</h2> <div class="searchTask">
+      <input type="text" id="searchtaskbar" placeholder="Search the task." onchange="searchTasks(event)">
+      <button type="submit" onclick="search()" id="searchbutton2">SEARCH</button>
+    </div>
+    <button id="filterbtn"><img src="filter.png" id="filterimg" onclick="showfilters()"></button>
+    <div id="filteroptions" class="dropdown-content">
+      <label><input type="radio" name="date" class="filter" id="newest">New ➡️ Old</label>
+      <label><input type="radio" name="date" class="filter" id="oldest">Old ➡️ New</label>
+      <label><input type="radio" class="filter" id="checked">Checked</label>
+      <button id="resetfilter" onclick="resetfilters()">Reset</button>
+      <button id="applyfilter" onclick="applyfilters()">Apply</button>
+    </div>
+  <div class="todo">
+
+
+  </div>
+</div>
+
+</footer>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

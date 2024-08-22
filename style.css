@@ -1,0 +1,198 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-image: url("back.png");
+  background-repeat: no-repeat;
+  background-size: 1910px 450px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  color: rgb(66, 66, 66);
+}
+footer{
+  background-image: url("back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 809px;
+}
+
+#taskbaslik{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:x-large;
+  color: rgb(66, 66, 66);
+}
+
+.searchbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+  padding-top: 10px;
+
+}
+
+#searchinput{
+  height: 50px;
+  width: 500px;
+  border: 2px solid gray;
+  background-color: #fff1e6;
+  border-right: none;
+  border-radius: 20px 0px 0px 20px;
+}
+#searchbutton{
+  background-color: #ffe0c8;
+  font-weight: bold;
+  width: 90px;
+  border: 2px solid gray;
+  border-left: none;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+
+#searchbutton:hover{
+  background-color: rgb(235, 235, 235);
+}
+#searchbutton2:hover{
+  background-color: rgb(235, 235, 235);
+}
+.cerceve{
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  align-items: center;
+  justify-content: center;
+}
+.todo{
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-left: 20px;
+  height: 520px;
+  width: 700px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: #ebd8ca;
+}
+.searchTask{
+  position: absolute;
+  top: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 45px;
+
+}
+
+#searchtaskbar{
+  background-color: #fff1e6;
+  border: 2px solid gray;
+  border-radius: 20px 0px 0px 20px;
+  width: 300px;
+  text-align: center;
+  border-right: none;
+}
+#searchbutton2{
+  background-color: #ffe0c8;
+  font-weight: bold;
+  width: 90px;
+  border: 2px solid gray;
+  border-left: none;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+#filterimg{
+  width: 25px;
+  height: 25px;
+}
+
+#filterbtn{
+position: absolute;
+right: 613px;
+top: 357px;
+  width: 35px;
+  height: 35px;
+  background-color: #ebd8ca;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content:center;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-checkbox {
+  margin-right: 30px;
+  width: 15px;
+  height: 20px;
+  
+}
+
+.task-text {
+  flex-grow: 1;
+  font-family: 'Segoe UI';
+}
+
+.delete-button {
+  height: 30px;
+  width: 40px;
+  background-color: #ebd8ca;
+  background-image:url("cop.png");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+
+}
+.dates{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#filteroptions{
+  display: none;
+  position: absolute;
+  top: 205px;
+  right: 600px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #F8A47E;
+  padding: 5px 5px;
+}
+
+#filteroptions label {
+  display: block;
+  margin: 6px 0;
+}
+
+#applyfilter{
+  background-color: #F8A47E;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: white;
+  cursor: pointer;
+}
+#resetfilter{
+  background-color: #F8A47E;
+border: 1px solid white;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+}
+
+#applyfilter:hover{
+  background-color: #f88854;
+}
+#resetfilter:hover{
+  background-color: #f88854;
+}
